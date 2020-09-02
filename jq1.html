@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $(".btn1").click(function(){
+    $("p").fadeOut();
+  });
+  $(".btn2").click(function(){
+    $("p").fadeIn();
+  });
+});
+</script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("div").dblclick(function(){
+    $( this ).toggleClass("divClass2");
+  });
+});
+</script>
+<style> 
+.divClass1
+{
+    padding:5px;
+    text-align:center;
+    background-color:red;
+    border:solid 1px;
+}
+.divClass2
+{
+    padding:5px;
+    text-align:center;
+    background-color:blue;
+    border:solid 1px;
+}
+</style>
+</head>
+<body>
+
+<p>Fading is successful</p>
+
+<button class="btn1">Fade out</button>
+<button class="btn2">Fade in</button><br><br>
+
+<div class="divClass1">double click here</div>
+
+
+</body>
+</html>
